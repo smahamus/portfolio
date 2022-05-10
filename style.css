@@ -216,7 +216,7 @@ footer a:active{
 .resume{
   background-color: #effeff;
   max-width: 800px;
-  box-shadow: 2px 2px 2px 2px;
+  box-shadow: 2px 2px 2px black;
 
 }
 
@@ -237,9 +237,19 @@ footer a:active{
     font-size: 1.5em;
 
   }
-
-  
-
-
-
 }
+/* JavaScript Game changes for mobile */
+.mobile{
+    display:none;
+}
+@media only screen and (max-width: 768px){
+    .desktop{
+        display:none;
+    }
+    .mobile{
+        display: block;
+        touch-action: manipulation;
+    }
+}
+
+

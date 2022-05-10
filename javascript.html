@@ -39,10 +39,18 @@
             <h3 class="center-text"> Try it. Use the FLAP WINGS button to stay in the air. How long can you fly?</h3>
 
         <div id="game" ></div>
-        <div class="game-controls">
-            <button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
-            <a href="" ><button class="myButton">PLAY AGAIN</button></a>
+        <!--There are two versions of controls...one for desktop that uses a mouse and one for mobile devices The desktop has the desktop class and the mobile has the mobile class-->
+        <div class="game-controls desktop">
+        <button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
+        <a href="" ><button class="myButton">PLAY AGAIN</button></a>
         </div>
+                    
+        <div class="game-controls mobile">
+            <button class="myButton" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.05)">FLAP WINGS</button>
+           <a href="" ><button class="myButton">PLAY AGAIN</button></a>
+        </div>
+
+
              <hr>
         <div class="center-game">
              <p class="center-text">This is the starting point from WC3 Schools before my enhancements to the HTML and CSS:</p>
@@ -55,6 +63,16 @@
             var myGamePiece;
             var myObstacles = [];
             var myScore;
+            /* Add variables for the height and width */
+            var canvasWidth = 640;
+            var canvasHeight = 360;
+            /*Test to see if I have a screen less than 768 pixels and if so, change the canvas size */
+            if (window.innerWidth < 768){
+                canvasWidth = 300;
+                canvasHeight= 300;
+            }
+
+
 
             function startGame() {
                 myGamePiece = new component(30, 30, "yellow", 10, 120);
@@ -66,8 +84,8 @@
             var myGameArea = {
                 canvas : document.createElement("canvas"),
                 start : function() {
-                    this.canvas.width = 640;
-                    this.canvas.height = 360;
+                    this.canvas.width = canvasWidth;/*Changed the number variable */
+                    this.canvas.height = canvasHeight;/*Changed the number variable */
                     this.context = this.canvas.getContext("2d");
                 var myGame = document.getElementById("game");
                 myGame.insertBefore(this.canvas, myGame.childNodes[0]);        
