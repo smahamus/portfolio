@@ -1,0 +1,245 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  margin: 0;
+
+}
+h1{
+ 
+  text-align: center;
+  font-size: 20px, bold;
+  padding: 20px;
+  
+  }
+header{
+   background-color: #498BD280;
+}
+.logo{
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+nav{
+  background-color: #017e92;
+  border-top: 2px solid #8b004836;
+  border-bottom: 2px solid #8b004836;
+
+}
+.myself{
+  float: left;
+  display: block;
+  max-width: 100%;
+  height: 460px;
+}
+.place{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main{
+  max-width: 1000px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+h2{
+  color: solid black;
+  margin-left: auto;
+  padding: 5px 5px 5px;
+  
+}
+h4{
+  text-align: center;
+}
+p{
+  padding: 5px 5px 5px;
+}
+footer{
+  background-color:#017e92;
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+
+/* Vertical Navigation bar */
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+}
+.place ul{
+  overflow: hidden;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    text-decoration: none;
+    padding-right: 10px;
+}
+nav a: link{
+    color: #47798c;
+}
+nav a:visited{
+    color: white;
+}
+nav a: hovert{
+    color: white;
+}
+nav a:active{
+    color: white;
+}
+ td,th{
+  border: 1px solid black;
+  padding: 3px;
+}
+th{
+  background-color: #D3D3D3;
+  color: solid black;
+}
+table{
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+  padding: center;
+}
+input{
+  margin: center;
+  
+}
+ label{
+  float: left;
+  width: 8em;
+  padding-right: 1em;
+  }
+  input, textarea{
+  margin-bottom: 1em;
+  display: block;
+  background-color: light blue;
+  
+  }
+  canvas {
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+  background-image: url(images/sky.png);
+  border: 3px solid light blue;
+  box-shadow: 2px 2px 6px black;
+}
+.center-text{
+  text-align: center;
+}
+.game-controls{
+  margin-top: 20px;
+  text-align: center;
+}
+  
+.myButton {
+  box-shadow: inset 0px 1px 3px 0px darkslategrey;
+  background: linear-gradient(to bottom, #A9A9A9 5%, #A9A9A9 100%);
+  background-color: darkblue;
+  border-radius: 5px;
+  border: 1px solid darkslategrey;
+  display: inline-block;
+  color: ight blue;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px lightgrey;
+}
+.photo{
+  margin-top: 80px;
+}
+.home-hero{
+  min-height: 300px;
+  background-image: url(images/ufo.jpg);
+  background-size: cover;
+  padding-top: 20px;
+  color: white;
+  }
+  .footer-icons{
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer-icons h2{
+  margin-top: 0;
+}
+footer a{
+  text-decoration:none;
+}
+footer a:link{
+  color:white;
+}
+footer a:visited{
+  color:white;
+}
+footer a:hover{
+  color:#CDEAF8;
+  text-decoration: none;
+}
+footer a:active{
+  color: #eeeeee;
+}
+
+.footer-bottom{
+  background-color: black;
+  padding: 10px;
+  color: #CDEAF8;
+  text-align:center;
+  width: 100%;
+}
+.icons .fa{
+    color: #ffffff;
+}
+
+.footer1000{
+  
+  padding: 40px 0 ;
+    color: #ffffff;
+    max-width:1000px;
+    margin:0 auto;
+    
+}
+.resume{
+  background-color: #effeff;
+  max-width: 800px;
+  box-shadow: 2px 2px 2px 2px;
+
+}
+
+
+
+
+/* CSS for Tablets */
+
+@media only screen and (max-width: 10240px){
+  h1{
+     font-size: 2em;
+   }
+}
+
+/* CSS for Smartphones */
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 1.5em;
+
+  }
+
+  
+
+
+
+}
